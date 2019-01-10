@@ -355,7 +355,7 @@ class WP_Job_Manager {
 		 * @param bool $chosen_used_on_page
 		 */
 		if ( apply_filters( 'job_manager_chosen_enabled', false ) ) {
-			_deprecated_hook( 'job_manager_chosen_enabled', '1.32.0', 'job_manager_select2_enabled' );
+			_deprecated_hook( 'job_manager_chosen_enabled', '1.32.0', 'job_manager_enhanced_select_enabled' );
 
 			// Assume if this filter returns true that the current page should have the multi-select scripts.
 			$enhanced_select_used_on_page = true;
